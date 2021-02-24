@@ -6,10 +6,14 @@ const routes: Array<RouteRecordRaw> = [
     path: '',
     redirect: '/folder/Inbox'
   },
+  // {
+  //   path: '/folder/:id',
+  //   component: () => import ('../views/Folder.vue')
+  // }
   {
-    path: '/folder/:id',
-    component: () => import ('../views/Folder.vue')
-  }
+    path: '/views/geolocation',
+    component: () => import ('../views/Geolocation.vue')
+  },
 ]
 
 const router = createRouter({
